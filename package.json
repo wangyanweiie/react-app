@@ -12,6 +12,19 @@
     "pre-check": "tsc && npx lint-staged",
     "postinstall": "husky install"
   },
+  "lint-staged": {
+    "src/**/*.{ts,tsx}": [
+      "pnpm eslint"
+    ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-customizable"
+    },
+    "cz-customizable": {
+      "config": "./.cz-config.cjs"
+    }
+  },
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
@@ -33,18 +46,5 @@
     "lint-staged": "12.5.0",
     "typescript": "^5.0.2",
     "vite": "^4.4.5"
-  },
-  "lint-staged": {
-    "src/**/*.{ts,tsx}": [
-      "pnpm eslint"
-    ]
-  },
-  "config": {
-    "commitizen": {
-      "path": "./node_modules/cz-customizable"
-    },
-    "cz-customizable": {
-      "config": "./.cz-config.cjs"
-    }
   }
 }

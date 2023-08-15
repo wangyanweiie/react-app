@@ -22,8 +22,8 @@ module.exports = {
   },
 
   // 跳过问题：修改范围，自定义修改范围，详细描述，issue 相关
-  skipQuestions: ['scope', 'customScope', 'body', 'footer']
+  skipQuestions: ['scope', 'customScope', 'body', 'footer'],
 
   // subject 描述文字长度最长是72
-  // subjectLimit: 72
+  subjectLimit: 72
 }
