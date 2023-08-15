@@ -1,0 +1,12 @@
+dist
+public
+node_modules
+uni_modules
+
+.local
+.output.js
+
+**/*.svg
+**/*.sh
+*.css
+*.scss
