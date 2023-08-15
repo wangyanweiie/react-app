@@ -10,6 +10,7 @@ module.exports = {
       'always',
       [
         'feat', // 新功能 feature
+        'fix', // 修复
         'docs', // 文档注释
         'style', // 代码格式(不影响代码运行的变动)
         'refactor', // 重构(既不增加新功能，也不是修复bug)
