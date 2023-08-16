@@ -2,42 +2,42 @@ module.exports = {
   env: {
     browser: true,
     es2021: true,
-    node: true,
+    node: true
   },
   extends: [
-    "eslint:recommended",
-    "plugin:@typescript-eslint/recommended",
-    "plugin:react/recommended",
-    "plugin:react/jsx-runtime",
+    'eslint:recommended',
+    'plugin:@typescript-eslint/recommended',
+    'plugin:react/recommended',
+    'plugin:react/jsx-runtime'
   ],
   overrides: [
     {
       env: {
-        node: true,
+        node: true
       },
-      files: [".eslintrc.{js,cjs}"],
+      files: ['.eslintrc.{js,cjs}'],
       parserOptions: {
-        sourceType: "script",
-      },
-    },
+        sourceType: 'script'
+      }
+    }
   ],
-  parser: "@typescript-eslint/parser",
+  parser: '@typescript-eslint/parser',
   parserOptions: {
-    ecmaVersion: "latest",
-    sourceType: "module",
+    ecmaVersion: 'latest',
+    sourceType: 'module'
   },
-  plugins: ["@typescript-eslint", "react"],
+  plugins: ['@typescript-eslint', 'react'],
   rules: {
-    "@typescript-eslint/no-non-null-assertion": "off",
+    '@typescript-eslint/no-non-null-assertion': 'off',
     // 声明但未使用的变量
-    "no-unused-vars": "warn",
-    "@typescript-eslint/no-unused-vars": ["warn"],
+    'no-unused-vars': 'warn',
+    '@typescript-eslint/no-unused-vars': ['warn'],
     // any
-    "@typescript-eslint/no-explicit-any": ["warn"],
+    '@typescript-eslint/no-explicit-any': ['warn']
   },
   settings: {
     react: {
-      version: "detect",
-    },
-  },
-};
+      version: 'detect'
+    }
+  }
+}
