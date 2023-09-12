@@ -10,6 +10,7 @@ specifiers:
   '@vitejs/plugin-react': ^4.0.3
   cz-customizable: ^7.0.0
   eslint: ^8.47.0
+  eslint-define-config: ^1.23.0
   eslint-plugin-react: ^7.33.1
   eslint-plugin-react-hooks: ^4.6.0
   eslint-plugin-react-refresh: ^0.4.3
@@ -34,6 +35,7 @@ devDependencies:
   '@vitejs/plugin-react': 4.0.4_vite@4.4.9
   cz-customizable: 7.0.0
   eslint: 8.47.0
+  eslint-define-config: 1.23.0
   eslint-plugin-react: 7.33.1_eslint@8.47.0
   eslint-plugin-react-hooks: 4.6.0_eslint@8.47.0
   eslint-plugin-react-refresh: 0.4.3_eslint@8.47.0
@@ -1639,6 +1641,11 @@ packages:
   /escape-string-regexp/4.0.0:
     resolution: {integrity: sha512-TtpcNJ3XAzx3Gq8sWRzJaVajRs0uVxA2YAkdb1jm2YkPz4G6egUFAyA3n5vtEIZefPk5Wa4UXbKuS5fKkJWdgA==}
     engines: {node: '>=10'}
+    dev: true
+
+  /eslint-define-config/1.23.0:
+    resolution: {integrity: sha512-4mMyu0JuBkQHsCtR+42irIQdFLmLIW+pMAVcyOV/gZRL4O1R8iuH0eMG3oL3Cbi1eo9fDAfT5CIHVHgdyxcf6w==}
+    engines: {node: ^16.13.0 || >=18.0.0, npm: '>=7.0.0', pnpm: '>= 8.6.0'}
     dev: true
 
   /eslint-plugin-react-hooks/4.6.0_eslint@8.47.0:

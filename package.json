@@ -1,50 +1,51 @@
 {
-  "name": "my-react-app",
-  "private": true,
-  "version": "0.0.0",
-  "type": "module",
-  "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build",
-    "preview": "vite preview",
-    "postinstall": "husky install",
-    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "eslint": "eslint --max-warnings=0",
-    "pre-check": "tsc && npx lint-staged"
-  },
-  "lint-staged": {
-    "src/**/*.{ts,tsx}": [
-      "pnpm eslint"
-    ]
-  },
-  "config": {
-    "commitizen": {
-      "path": "./node_modules/cz-customizable"
+    "name": "react-app",
+    "private": true,
+    "version": "1.0.0",
+    "type": "module",
+    "scripts": {
+        "dev": "vite",
+        "build": "tsc && vite build",
+        "preview": "vite preview",
+        "postinstall": "husky install",
+        "type-check": "tsc",
+        "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+        "commit": "git add . && git cz"
     },
-    "cz-customizable": {
-      "config": "./.cz-config.cjs"
+    "lint-staged": {
+        "src/**/*.{ts,tsx}": [
+            "pnpm lint"
+        ]
+    },
+    "config": {
+        "commitizen": {
+            "path": "./node_modules/cz-customizable"
+        },
+        "cz-customizable": {
+            "config": "./.cz-config.cjs"
+        }
+    },
+    "dependencies": {
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0"
+    },
+    "devDependencies": {
+        "@commitlint/cli": "^17.7.1",
+        "@commitlint/config-conventional": "^17.7.0",
+        "@types/react": "^18.2.15",
+        "@types/react-dom": "^18.2.7",
+        "@typescript-eslint/eslint-plugin": "^6.4.0",
+        "@typescript-eslint/parser": "^6.4.0",
+        "@vitejs/plugin-react": "^4.0.3",
+        "cz-customizable": "^7.0.0",
+        "eslint": "^8.47.0",
+        "eslint-define-config": "^1.23.0",
+        "eslint-plugin-react": "^7.33.1",
+        "eslint-plugin-react-hooks": "^4.6.0",
+        "eslint-plugin-react-refresh": "^0.4.3",
+        "husky": "^8.0.3",
+        "lint-staged": "12.5.0",
+        "typescript": "^5.0.2",
+        "vite": "^4.4.5"
     }
-  },
-  "dependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
-  },
-  "devDependencies": {
-    "@commitlint/cli": "^17.7.1",
-    "@commitlint/config-conventional": "^17.7.0",
-    "@types/react": "^18.2.15",
-    "@types/react-dom": "^18.2.7",
-    "@typescript-eslint/eslint-plugin": "^6.4.0",
-    "@typescript-eslint/parser": "^6.4.0",
-    "@vitejs/plugin-react": "^4.0.3",
-    "cz-customizable": "^7.0.0",
-    "eslint": "^8.47.0",
-    "eslint-plugin-react": "^7.33.1",
-    "eslint-plugin-react-hooks": "^4.6.0",
-    "eslint-plugin-react-refresh": "^0.4.3",
-    "husky": "^8.0.3",
-    "lint-staged": "12.5.0",
-    "typescript": "^5.0.2",
-    "vite": "^4.4.5"
-  }
 }
