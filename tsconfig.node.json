@@ -1,11 +1,18 @@
 // tsconfig.node.json 是用于 Node.js 的配置文件
 {
-  "compilerOptions": {
-    "composite": true,
-    "skipLibCheck": true,
-    "module": "ESNext",
-    "moduleResolution": "bundler",
-    "allowSyntheticDefaultImports": true
-  },
-  "include": ["vite.config.ts"]
+    "include": ["vite.config.ts"],
+
+        // 编译选项
+    "compilerOptions": {
+        // 启用项目编译
+        "composite": true,
+        // 跳过库文件检查
+        "skipLibCheck": true,
+        // 指定生成哪个模块系统代码
+        "module": "ESNext",
+        // 决定如何处理模块 'Classic' | 'Node' | 'bundler'
+        "moduleResolution": "bundler",
+        // 允许对不包含默认导出的模块使用默认导入
+        "allowSyntheticDefaultImports": true
+    }
 }
