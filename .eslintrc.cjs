@@ -25,7 +25,6 @@ module.exports = defineConfig({
      *   - @babel/eslint-parser：由Babel项目提供的解析器，用于解析ES6+代码
      *   - @typescript-eslint/parser：由 TypeScript 团队提供的解析器，用于解析 TypeScript 代码
      *   - eslint-plugin-html：用于解析HTML文件中的JavaScript代码
-     *   - vue-eslint-parser：用于解析Vue单文件组件中的JavaScript代码
      */
     parser: '@typescript-eslint/parser',
 
